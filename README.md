@@ -1,1 +1,0 @@
-# QE_Gita-Leoni-Dwi-Fripta
