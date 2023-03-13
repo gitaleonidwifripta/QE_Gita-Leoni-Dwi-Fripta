@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7418df07-fa16-4e39-9239-82cdda267670" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basiprogrammingDanOOP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_Prioritas1_No_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_explorasi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_prioritas1_No_2_sampel1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_prioritas1_No_2_sampel2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_prioritas1_No_2_sampel_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_prioritas2_No_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/BP_soalprioritas2_no_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumbasic/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/praktikumoop/book.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2MvDuwchDxjEvfgdMjRcmjN1CgU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QE_Gita-Leoni-Dwi-Fripta\basiprogrammingDanOOP\src\praktikumoop" />
+      <recent name="C:\QE_Gita-Leoni-Dwi-Fripta\basiprogrammingDanOOP\src\praktikumbasic" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7418df07-fa16-4e39-9239-82cdda267670" name="Changes" comment="" />
+      <created>1678639393695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678639393695</updated>
+    </task>
+    <servers />
+  </component>
+</project>
