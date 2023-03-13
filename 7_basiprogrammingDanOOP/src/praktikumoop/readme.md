@@ -9,3 +9,5 @@ serta memungkinkan penggunaan kembali kode program.
 3. inheritance
 4. atribute
 5. method
+
+https://drive.google.com/drive/folders/1QcNg9edU3daFy7tPN_NO18XIbeW6Cx2D?usp=share_link link ss
