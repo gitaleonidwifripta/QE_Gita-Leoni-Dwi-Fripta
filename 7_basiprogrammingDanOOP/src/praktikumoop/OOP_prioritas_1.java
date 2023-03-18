@@ -1,4 +1,4 @@
-package praktikumOop;
+package praktikumoop;
 
 public class OOP_prioritas_1 {
     private String nama;

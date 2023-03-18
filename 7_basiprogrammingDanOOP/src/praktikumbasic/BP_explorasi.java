@@ -14,7 +14,6 @@ public class BP_explorasi {
         }
         return ciphertext;
     }
-
     public static void main(String[] args) {
         System.out.println(encrypt("SEPULSA OKE")); // COZEVCK YUO
         System.out.println(encrypt("ALTERRA ACADEMY")); // KVDOBBK KMKNOWI
