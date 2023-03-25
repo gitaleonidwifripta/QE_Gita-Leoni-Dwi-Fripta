@@ -1,0 +1,454 @@
+{
+	"info": {
+		"_postman_id": "9b3651f3-3c97-48e0-9bfd-d36994e5a446",
+		"name": "restfulapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restfull API",
+			"item": [
+				{
+					"name": "Get All Data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();\r",
+									"let responseStatus = pm.response.code;\r",
+									"let resTime = pm.response.responseTime;\r",
+									"let exResponseTime = pm.environment.get(\"ResponseTime\");\r",
+									"let resUserID = jsonData.userId;\r",
+									"let exUserId = pm.variables.get(\"userId\");\r",
+									"let resId = jsonData.id;\r",
+									"let exId = pm.variables.get(\"id\");\r",
+									"let resTitle= jsonData.title;\r",
+									"let exTitle = pm.variables.get(\"title\");\r",
+									"let resBody = jsonData.body;\r",
+									"let exBody = pm.variables.get(\"body\");\r",
+									"\r",
+									"console.log(resTime);\r",
+									"\r",
+									"pm.test('Response status code is 200', function(){\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response less then ${exResponseTime}`, function(){\r",
+									"    pm.expect(resTime).to.below(1000);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response userId is ${exUserId}`, function(){\r",
+									"    pm.expect(resUserID).to.eql(exUserId);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response Id is ${exId}`, function(){\r",
+									"    pm.expect(resId).to.eql(exId);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response title is ${exTitle}`, function(){\r",
+									"    pm.expect(resTitle).to.eql(exTitle);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response body is ${exBody}`, function(){\r",
+									"    pm.expect(resBody).to.eql(exBody);\r",
+									"});\r",
+									"\r",
+									"console.log(exUserId);\r",
+									"console.log(resUserID);\r",
+									"console.log(exId);\r",
+									"console.log(resId);\r",
+									"console.log(exTitle);\r",
+									"console.log(resTitle);\r",
+									"console.log(exBody);\r",
+									"console.log(resBody);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creat Data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();\r",
+									"let responseStatus = pm.response.code;\r",
+									"let resTime = pm.response.responseTime;\r",
+									"let exResponseTime = pm.environment.get(\"ResponseTime\");\r",
+									"let resUserID = jsonData.userId;\r",
+									"let exUserId = pm.variables.get(\"userId\");\r",
+									"let resId = jsonData.id;\r",
+									"let exId = pm.variables.get(\"id\");\r",
+									"let resTitle= jsonData.title;\r",
+									"let exTitle = pm.variables.get(\"title\");\r",
+									"let resBody = jsonData.body;\r",
+									"let exBody = pm.variables.get(\"body\");\r",
+									"\r",
+									"console.log(resTime);\r",
+									"\r",
+									"pm.test('Response status code is 201', function(){\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response less then ${exResponseTime}`, function(){\r",
+									"    pm.expect(resTime).to.below(1000);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response userId is ${exUserId}`, function(){\r",
+									"    pm.expect(resUserID).to.eql(exUserId);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response id is ${exId}`, function(){\r",
+									"    pm.expect(resId).to.eql(exId);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response title is ${exTitle}`, function(){\r",
+									"    pm.expect(resTitle).to.eql(exTitle);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response body is ${exBody}`, function(){\r",
+									"    pm.expect(resBody).to.eql(exBody);\r",
+									"});\r",
+									"\r",
+									"console.log(exUserId);\r",
+									"console.log(resUserID);\r",
+									"console.log(exId);\r",
+									"console.log(resId);\r",
+									"console.log(exTitle);\r",
+									"console.log(resTitle);\r",
+									"console.log(exBody);\r",
+									"console.log(resBody);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//data-driven test\r",
+									"if (!pm.variables.get(\"index\")) {\r",
+									"const parse = require('csv-parse/lib/sync');\r",
+									"//input your csv data here\r",
+									"const input = `\r",
+									"testNumber,testDesc,testType,userId,id,title,body\r",
+									"1,Data Satu,Positive,1,1,matahari,cantik\r",
+									"2,Data dua,Positive,,1,matahari,Bad Request\r",
+									"3,Data Tiga,Negative,101,,400,Bad Request\r",
+									"4,Data empat,Negative,,,400,Bad Request\r",
+									"`;\r",
+									"\r",
+									"    const records = parse(input, {\r",
+									"        columns: true,\r",
+									"        skip_empty_lines: true\r",
+									"        }\r",
+									"    )\r",
+									"\r",
+									"    pm.variables.set(\"index\", 0);\r",
+									"    pm.variables.set(\"records\", records);\r",
+									"}\r",
+									"\r",
+									"records = pm.variables.get(\"records\");\r",
+									"index = pm.variables.get(\"index\");\r",
+									"\r",
+									"if (index !== records.length) {\r",
+									"    for (let i of Object.entries(records[index])) {\r",
+									"        pm.variables.set(i[0], i[1]);\r",
+									"    }\r",
+									"    pm.variables.set(\"index\", ++index);\r",
+									"    pm.variables.get(\"index\")===records.length?null:postman.setNextRequest(pm.info.requestName);\r",
+									"}\r",
+									"\r",
+									"if (index == records.length) {\r",
+									"    pm.variables.unset(\"index\");\r",
+									"}\r",
+									"\r",
+									"//info\r",
+									"if (pm.variables.has(\"testNumber\")) {\r",
+									"    var testNumber = pm.variables.get(\"testNumber\");\r",
+									"    var testDesc = pm.variables.get(\"testDesc\");\r",
+									"    var testType = pm.variables.get(\"testType\");\r",
+									"}\r",
+									"\r",
+									"console.info(\"Test number: \"+testNumber);\r",
+									"console.info(\"Test type: \"+testType);\r",
+									"console.info(\"Test description: \"+testDesc);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"userId\": 1,\r\n        \"title\": \"matahari\",\r\n        \"body\": \"cantik\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/1",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();\r",
+									"let responseStatus = pm.response.code;\r",
+									"let resTime = pm.response.responseTime;\r",
+									"let exResponseTime = pm.environment.get(\"ResponseTime\");\r",
+									"let resEmail = jsonData.data[0].email;\r",
+									"let exEmail = pm.environment.get(\"email\");\r",
+									"console.log(resTime);\r",
+									"\r",
+									"pm.test('Response status code is 200', function(){\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response less then ${exResponseTime}`, function(){\r",
+									"    pm.expect(resTime).to.below(1000);\r",
+									"});\r",
+									"\r",
+									"pm.test(`Response Email is ${exEmail}`, function(){\r",
+									"    pm.expect(resEmail).to.eql(exEmail);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"if (!pm.variables.get(\"index\")) {\r",
+									"const parse = require('csv-parse/lib/sync');\r",
+									"\r",
+									"const input = `\r",
+									"testNumber,testDesc,testType,name,job,expectedStatusCode,status\r",
+									"1,Data satu,positive,morpheus,leader,201,OK\r",
+									"2,Data dua,positive,morphe,leader,201,OK\r",
+									"`;\r",
+									"\r",
+									"    const records = parse(input, {\r",
+									"        columns: true,\r",
+									"        skip_empty_lines: true\r",
+									"        }\r",
+									"    )\r",
+									"\r",
+									"    pm.variables.set(\"index\", 0);\r",
+									"    pm.variables.set(\"records\", records);\r",
+									"}\r",
+									"\r",
+									"records = pm.variables.get(\"records\");\r",
+									"index = pm.variables.get(\"index\");\r",
+									"\r",
+									"if (index !== records.length) {\r",
+									"    for (let i of Object.entries(records[index])) {\r",
+									"        pm.variables.set(i[0], i[1]);\r",
+									"    }\r",
+									"    pm.variables.set(\"index\", ++index);\r",
+									"    pm.variables.get(\"index\")===records.length?null:postman.setNextRequest(pm.info.requestName);\r",
+									"}\r",
+									"\r",
+									"if (index == records.length) {\r",
+									"    pm.variables.unset(\"index\");\r",
+									"}\r",
+									"if (pm.variables.has(\"testNumber\")) {\r",
+									"    var testNumber = pm.variables.get(\"testNumber\");\r",
+									"    var testDesc = pm.variables.get(\"testDesc\");\r",
+									"    var testType = pm.variables.get(\"testType\");\r",
+									"}\r",
+									"\r",
+									"console.info(\"Test number: \"+testNumber);\r",
+									"console.info(\"Test type: \"+testType);\r",
+									"console.info(\"Test description: \"+testDesc);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"userId\": 1,\r\n        \"id\" : 1,\r\n        \"title\": \"bunga matahari\",\r\n        \"body\": \"bungan matahari berwarna kuning cantik\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/1",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\r\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts/1",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
